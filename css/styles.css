@@ -2,10 +2,10 @@ body {
   font-family: "Roboto", "Raleway", sans-serif;
   margin: 0;
   padding: 0;
-  width: 100%;
-  max-width: 100%;
+  max-width: 320px;
   box-sizing: border-box;
   overflow-x: hidden;
+  /* background-color: #1515d4; */
 }
 .container {
   width: 100%;
@@ -44,7 +44,6 @@ body {
 .accent-web {
   font-weight: 700;
 }
-
 .hamburger-menu-style-icon {
   width: 18px;
   height: 16px;
@@ -345,8 +344,8 @@ h2 {
   border-left: 1px solid #e7e9fc;
   border-right: 1px solid #e7e9fc;
   padding: 32px 16px;
-  /* width: 360px;
-  height: 120px; */
+  width: 100%;
+  height: 120px;
 }
 /* (Portfolio) kısmının olduğu kod burada bitiyor */
 /* Son kısmın (footer) olduğu kod burada başlıyor */
@@ -499,7 +498,6 @@ h2 {
   border-radius: 4px;
   width: 288px;
   height: 623px;
-  border: 2px solid red;
 }
 .modal-close {
   position: absolute;
@@ -548,7 +546,6 @@ h2 {
   height: 336px;
   margin-right: 16px;
   margin-left: 16px;
-  border: 1px solid;
 }
 .modal-form-container {
   display: flex;
