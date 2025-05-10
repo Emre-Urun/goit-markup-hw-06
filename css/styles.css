@@ -1,315 +1,321 @@
 body {
-  font-family: "Roboto", "Raleway", sans-serif;
-  margin: 0;
-  padding: 0;
   max-width: 320px;
-  box-sizing: border-box;
-  overflow-x: hidden;
-  /* background-color: #1515d4; */
+  font-family: "Roboto", "Raleway", sans-serif;
 }
 .container {
   width: 100%;
-  box-sizing: border-box;
 }
-/* Başlık Bölümüne ait kod burada başlıyor */
+.title-hamburger-menu {
+  display: none;
+}
+
+.modal {
+  display: none;
+}
+.is-open {
+  display: block;
+}
+.modal.is-open {
+  display: flex;
+}
+
+/* Header Bölümü Kodu burada başlıyor */
 .title {
-  position: sticky;
-  top: 0;
-  z-index: 999;
-  color: #2e2f42;
+  width: 320px;
   height: 56px;
-  background-color: #fff;
+  border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
+  background: #fff;
   display: flex;
-  padding: 16px;
-  height: 56px;
+  align-items: center;
+  gap: 149px;
+  padding-right: 16px;
+  padding-left: 16px;
 }
-.title-box {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  border-bottom: 1px solid rgba(0, 0, 255, 0.127);
-  padding-bottom: 16px;
-}
-.web {
+.title-logo {
   font-weight: 700;
   font-size: 18px;
-  line-height: 1.16;
+  line-height: 1.16667;
   letter-spacing: 0.03em;
-  font-weight: 700;
-  /* margin: 16px 189px 16px 16px; */
-}
-.accent {
   color: #4d5ae5;
 }
-.accent-web {
+.title-logo-two {
   font-weight: 700;
+  font-size: 18px;
+  line-height: 1.16667;
+  letter-spacing: 0.03em;
+  color: #2e2f42;
 }
-.hamburger-menu-style-icon {
+.hamburger-menu-icon {
   width: 18px;
   height: 16px;
 }
-.navigation {
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  font-weight: 500;
-  display: none;
-}
-.navigation-list {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: 40px;
-  height: 24px;
-  width: 261px;
-}
-.navigation-list-item:hover {
-  color: #404bbf;
-}
-.nav-one::after {
-  content: "";
-  display: flex;
-  flex-direction: column;
-  width: 48px;
-  height: 4px;
-  background-color: #404bbf;
-  border-radius: 2px;
-  margin-top: 20px;
-}
-.adres {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #434455;
-  text-decoration: none;
-  display: none;
-}
-.adres-list {
-  display: flex;
-}
-.adres-mail {
-  margin-left: 332px;
-}
-.adres-tel {
-  margin-right: 156px;
-  margin-left: 40px;
-}
-.adres-mail:hover,
-.adres-tel:hover {
-  color: #404bbf;
-  text-decoration: underline;
-}
+/* Hamburger Menu Kodu burada başlıyor */
 
-/* Başlık Bölümüne ait kod burada bitiyor */
-/* Butonun olduğu kod burada başlıyor */
-.first-field {
-  width: 100%;
-  height: 432px;
-  background-color: #2e2f42;
-  background: radial-gradient(rgba(46, 47, 66, 0.7)),
-    url(../image/people-office.jpg);
-  background-size: cover;
-  background-position: center;
+.title-hamburger-menu {
+  position: relative;
+}
+.title-hamburger-menu-close {
+  width: 24px;
+  height: 24px;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 72px;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  border-radius: 100%;
+  background-color: #e7e9fc;
+  stroke-width: 1px;
+  stroke: #2e2f42;
+  position: absolute;
+  top: 24px;
+  right: 24px;
 }
-.first-field-title {
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 1.11;
-  letter-spacing: 0.02em;
-  text-align: center;
-  color: #fff;
-  margin: 0;
-  padding-left: 52px;
-  padding-right: 52px;
+.modal-close-button-icon {
+  width: 8px;
+  height: 8px;
 }
-.first-field-button {
-  display: flex;
-  width: 169px;
-  height: 56px;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.156);
-  background-color: #4d5ae5;
-  border: none;
-  border-radius: 4px;
-  font-family: "Roboto", sans-serif;
-  letter-spacing: 0.04em;
-  font-weight: 500;
-  color: #fff;
-  justify-content: center;
-  align-items: center;
-}
-.first-field-button:hover,
-.first-field-button:focus {
+.title-hamburger-menu-close:hover {
   background-color: #404bbf;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
-/* Butonun olduğu kod burada bitiyor */
-/* Dört Başlıklı açıklamaların olduğu kod burada başlıyor */
-.two-field {
-  width: 100%;
+.title-hamburger-menu-close:hover .modal-close-button-icon {
+  fill: #fff;
 }
-.two-field-list {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  margin: 96px 16px;
-  gap: 72px;
+body.menu-open {
+  overflow: hidden;
 }
-.two-field-list-item {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-direction: column;
-  gap: 8px;
-  background-color: rgba(0, 0, 0, 0.2);
-}
-.two-field-list-item h3 {
-  text-align: center;
-  margin: 0 auto;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.11;
-  letter-spacing: 0.02em;
-}
-.two-field-box-svg {
-  display: flex;
-  padding: 24px 100px;
-  margin-bottom: 8px;
-  border: 1px solid #0a0a0a;
-  border-radius: 4px;
-  width: 264px;
-  height: 112px;
-  background: #f4f4fd;
-}
-.two-field-box-svg {
+/* Sadece hamburger menüyü göster, header içindeki diğer her şeyi gizle */
+body.menu-open .title-wrapper > :not(#title-hamburger-menu) {
   display: none;
 }
-.two-field-svg {
-  width: 64px;
-  height: 64px;
+/* Sayfanın geri kalanını gizle */
+body.menu-open main,
+body.menu-open footer {
+  display: none;
 }
-/* Dört Başlıklı açıklamaların olduğu kod burada bitiyor */
-/* (Our Team) kısmının olduğu kod burada başlıyor */
-.three-field {
-  width: 100%;
-  height: 100%;
-  background-color: #f4f4fd;
-}
-h2 {
-  padding-top: 96px;
-  text-align: center;
-  font-size: 36px;
-  font-weight: 700;
-}
-.three-field-list {
-  margin-top: 0;
+.nav-menu {
+  padding: 72px 153px 168px 16px;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 72px;
-  flex-wrap: wrap;
-  padding-bottom: 96px;
+  flex-direction: column;
+  gap: 40px;
 }
-.three-field-list .text-name {
-  line-height: 1.2;
+.nav-menu-list {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11111;
   letter-spacing: 0.02em;
-  font-weight: 500;
-  font-size: 20px;
   color: #2e2f42;
 }
-.three-field-list .text-information {
+.nav-menu-list-two {
+  color: #404bbf;
+}
+.adres-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding-left: 16px;
+}
+.adres-menu-list {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
   color: #434455;
 }
-.three-field-list-border {
+.adres-menu-list:hover {
+  color: #4d5ae5;
+  text-decoration: underline;
+}
+.social-media {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  padding-top: 48px;
+  padding-left: 16px;
+  padding-bottom: 40px;
+}
+.social-media-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social-media-icon {
+  width: 40px;
+  height: 40px;
+  fill: #404bbf;
+}
+.social-media-list:hover .social-media-icon {
+  fill: #31d0aa;
+}
+/* Hamburger Menu kodu burada bitiyor */
+/* Header Bölümü kodu burada bitiyor */
+/* Arka plan resminin olduğu kod burada başlıyor */
+.part-one {
+  width: 320px;
+  height: 432px;
+  background-image: radial-gradient(rgba(46, 47, 66, 0.7)),
+    url(../image/people-office.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 88px;
+}
+.part-one-text {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11111;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #fff;
+  margin-left: 52px;
+  margin-right: 52px;
+}
+.part-one-button {
+  border-radius: 4px;
+  /* padding: 16px 32px; */
+  width: 169px;
+  height: 56px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  background: #4d5ae5;
+  border: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+}
+.part-one-button:hover {
+  background-color: #404bbf;
+}
+/* Arka plan resminin olduğu kod burada bitiyor */
+/* 4 başlıklı bölümün olduğu kod burada başlıyor */
+.part-two {
+  padding: 96px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 72px;
+}
+.part-two-list {
+  background: rgba(0, 0, 0, 0.2);
+}
+.part-two-list-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11111;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #2e2f42;
+  margin-bottom: 8px;
+}
+.part-two-list-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
+/* 4 başlıklı bölümün olduğu kod burada bitiyor */
+/* Our Team kısmının olduğu kod burada başlıyor */
+.part-three {
+  background: #f4f4fd;
+  gap: 32px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 8px;
-  background-color: #fff;
-  padding: 32px 16px;
-  border-radius: 0 0 4px 4px;
+  max-width: 320px;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
-.three-field-list img {
+.part-three-title {
+  margin-bottom: 40px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11111;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #2e2f42;
+}
+.part-three-list {
+  margin-left: 16px;
+  margin-right: 16px;
+  width: 264px;
+  height: 428px;
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+}
+.part-three-list-img {
   width: 264px;
   height: 260px;
 }
-.three-field-box {
-  display: flex;
-  width: 232px;
-  height: 40px;
-  align-items: center;
-  justify-content: center;
-  gap: 24px;
-}
-.three-field-box-svg {
-  width: 40px;
-  height: 40px;
-  margin-top: 8px;
-  fill: #4d5ae5;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.three-field-box-svg:hover {
-  fill: #31d0aa;
-}
-.three-field-list li {
-  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
-    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
-}
-.three-field-list-box {
-  border-radius: 2px;
-}
-/* (Our Team) kısmının olduğu kod burada bitiyor */
-/* (Portfolio) kısmının olduğu kod burada başlıyor */
-.four-field {
-  width: 100%;
-  margin-right: auto;
-  margin-left: auto;
-}
-.four-field-list {
+.part-three-list-text {
+  width: 264px;
+  height: 168px;
+  padding: 32px 16px;
   display: flex;
   flex-direction: column;
-  gap: 48px;
-  padding-left: 16px;
-  padding-right: 16px;
-  text-align: center;
-  margin-bottom: 120px;
+  gap: 8px;
 }
-.four-field-list h3 {
-  display: flex;
-  justify-content: flex-start;
-  font-size: 20px;
+.part-three-list-text-name {
   font-weight: 500;
+  font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  margin-bottom: 8px;
+  text-align: center;
+  color: #2e2f42;
 }
-.text-name-info {
-  display: flex;
+.part-three-list-text-information {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #435543;
-  justify-content: flex-start;
-  align-items: center;
+  text-align: center;
+  color: #434455;
 }
-.list-border {
+.part-three-list-social-media {
+  gap: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* Our Team kısmının olduğu kod burada bitiyor */
+/* Portfolio kısmının olduğu kod burada başlıyor */
+.part-four {
+  padding: 96px 16px;
+}
+.part-four-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11111;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #2e2f42;
+  margin-bottom: 72px;
+}
+.part-four-list-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+.part-four-list {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.list-border-img {
+.part-four-list:hover .part-four-list-hidden {
+  transform: translateY(0);
+}
+.part-four-list-img {
   position: relative;
   overflow: hidden;
 }
-.list-border-hidden {
+.part-four-list-img:hover {
+  transform: translateY(0);
+}
+.part-four-list-hidden {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -325,161 +331,134 @@ h2 {
   transform: translateY(100%);
   transition: transform 250ms ease-in-out;
 }
-.list-border-img:hover {
-  transform: translateY(0);
-}
-.list-border:hover .list-border-hidden {
-  transform: translateY(0);
-}
-.list-border:hover {
+.part-four-list:hover {
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
-.text-name-box {
+.part-four-list-text {
   display: flex;
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
+  gap: 8px;
   border-bottom: 1px solid #e7e9fc;
   border-left: 1px solid #e7e9fc;
   border-right: 1px solid #e7e9fc;
   padding: 32px 16px;
-  width: 100%;
-  height: 120px;
 }
-/* (Portfolio) kısmının olduğu kod burada bitiyor */
-/* Son kısmın (footer) olduğu kod burada başlıyor */
-.last-field {
+/* Portfolio kısmının olduğu kod burada bitiyor */
+/* Footer bölümü kodu burada başlıyor */
+.part-five {
   background-color: #2e2f42;
-  width: 100%;
-  display: flex;
-  padding: 96px 16px;
-}
-.last-field-box {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  padding: 96px 16px;
+  gap: 72px;
+}
+.part-five-title {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 16px;
 }
-.last-field-one {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 1.16667;
-  letter-spacing: 0.03em;
+.part-five-logo-title-two {
   color: #f4f4fd;
 }
-.last-field-two {
+.part-five-title-text {
   font-weight: 400;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
 }
-.last-two-box {
+.part-five-social-media-wrapper {
   display: flex;
-  flex-direction: column;
-  padding-top: 100px;
-  padding-right: 692px;
-  padding-bottom: 120px;
+  flex-direction: row;
   gap: 16px;
-  width: 208px;
-  height: 80px;
 }
-.son-box {
+.part-five-social-media {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  justify-content: center;
   align-items: center;
-  margin-top: 72px;
 }
-.last-field-social {
+.part-five-social-media-text {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #fff;
 }
-.last-field-form-container {
-  width: 100%;
+.part-five-contacts {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.last-field-form {
-  display: flex;
-  flex-direction: column;
-  margin-top: 72px;
-  justify-content: center;
-  align-items: center;
   gap: 16px;
-}
-.last-field-form-label {
-  display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.part-five-contacts-title {
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #fff;
-  gap: 16px;
 }
-.last-field-form-input {
-  width: 264px;
-  height: 40px;
+.part-five-contacts-input {
   border: 1px solid #fff;
   border-radius: 4px;
+  width: 288px;
+  height: 40px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-  font-weight: 500;
+  opacity: 0.3;
   background-color: #2e2f42;
   padding-top: 8px;
+  padding-left: 8px;
   padding-bottom: 8px;
-  padding-left: 16px;
   color: #fff;
   font-family: inherit;
 }
-.last-field-form-input::placeholder {
+.part-five-contacts-input::placeholder {
   font-weight: 400;
   font-size: 12px;
   line-height: 2;
   letter-spacing: 0.04em;
   color: #fff;
+  font-family: inherit;
+  opacity: 0.6;
 }
-.last-field-form-button {
-  width: 165px;
-  height: 40px;
+.part-five-contacts-button {
   border-radius: 4px;
   padding: 8px 24px;
+  width: 165px;
+  height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: row;
   gap: 16px;
+  border: none;
   background: #4d5ae5;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
   text-align: center;
-  border: none;
   color: #fff;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
-.last-field-form-svg {
-  display: flex;
-  align-items: center;
+.part-five-contacts-button-icon {
   width: 24px;
   height: 24px;
   fill: #fff;
 }
-.last-field-form-button:hover {
-  background-color: #404bbf;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+.part-five-contacts-button:hover {
+  background: #404bbf;
 }
-/* Son kısmın (footer) olduğu kod burada bitiyor */
+/* Footer bölümü kodu burada bitiyor */
 /* Modal ögesinin kodu burada başlıyor */
-.backdrop {
+.modal {
   position: fixed;
   inset: 0;
   background: rgba(0, 0, 0, 0.5);
@@ -488,23 +467,23 @@ h2 {
   justify-content: center;
   align-items: center;
   display: none;
+  max-width: 320px;
 }
-.is-open {
-  display: flex;
-}
-.modal {
+.modal-wrapper {
   position: relative;
-  background: #fff;
   border-radius: 4px;
   width: 288px;
   height: 623px;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
+    0 2px 1px 0 rgba(0, 0, 0, 0.2);
+  background: #fcfcfc;
 }
-.modal-close {
+.modal-close-button {
   position: absolute;
   width: 24px;
   height: 24px;
-  right: 24px;
   top: 24px;
+  right: 24px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -514,26 +493,26 @@ h2 {
   border: 1px solid rgba(0, 0, 0, 0.1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-close-icon {
+.modal-close-button-icon {
   width: 8px;
   height: 8px;
   fill: #2e2f42;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-close:hover {
+.modal-close-button:hover {
   background-color: #404bbf;
 }
-.modal-close:hover .modal-close-icon {
+.modal-close-button:hover .modal-close-button-icon {
   fill: #fff;
 }
-.modal .modal-text {
+.modal-text {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e422f;
-  margin: 72px 16px 16px;
+  margin: 72px 24px 16px;
 }
 .modal-form {
   display: flex;
@@ -542,42 +521,38 @@ h2 {
   flex-direction: column;
   gap: 8px;
   border-radius: 4px;
-  width: 256px;
-  height: 336px;
-  margin-right: 16px;
-  margin-left: 16px;
+  margin: 16px 24px;
 }
-.modal-form-container {
+.modal-form-wrapper {
   display: flex;
   flex-direction: column;
-  width: 100%;
 }
-.modal-form-label {
+.modal-form-wrapper-label {
   margin-bottom: 4px;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.16667;
   letter-spacing: 0.04em;
   color: #8e8f99;
-  width: 100%;
 }
 .modal-form-input-wrapper {
   position: relative;
 }
-.modal-form-input::placeholder {
+.modal-form-wrapper-input::placeholder {
   font-family: inherit;
   font-size: inherit;
 }
-.modal-form-input {
+.modal-form-wrapper-input {
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
-  width: 100%;
+  width: 256px;
+  height: 40px;
   padding-top: 11px;
   padding-bottom: 11px;
   padding-left: 38px;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.form-icon {
+.modal-form-wrapper-icon {
   position: absolute;
   width: 12px;
   height: 12px;
@@ -587,11 +562,11 @@ h2 {
   fill: #34422e;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-form-input:focus {
+.modal-form-wrapper-input:focus {
   border: 1px solid #4d5ae5;
   outline: none;
 }
-.modal-form-input:focus + .form-icon {
+.modal-form-wrapper-input:focus + .modal-form-wrapper-icon {
   border: none;
   fill: #4d5ae5;
 }
@@ -609,7 +584,7 @@ h2 {
   border: 1px solid #4d5ae5;
   outline: none;
 }
-.modal-form-textarea::placeholder {
+.modal-form-input-textarea::placeholder {
   font-weight: 400;
   font-size: 12px;
   line-height: 1.16667;
@@ -659,7 +634,7 @@ h2 {
   display: flex;
   justify-content: center;
   text-align: center;
-  margin: 71px 59px 24px 60px;
+  margin: 24px 59px 24px 60px;
   width: 169px;
   height: 56px;
   border-radius: 4px;
@@ -678,16 +653,12 @@ h2 {
   background-color: #404bbf;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
-
+.modal-form-label {
+  margin-bottom: 4px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16667;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+}
 /* Modal ögesinin kodu burada bitiyor */
-/* Phone tasarımı kodu burada başlıyr */
-.hamburger-menu {
-  display: none;
-}
-.hamburger-menu-close {
-  /* position: absolute; */
-  margin-top: 24px;
-  margin-right: 24px;
-  display: none;
-}
-/* Phone tasarım kodu burada bitiyor */
