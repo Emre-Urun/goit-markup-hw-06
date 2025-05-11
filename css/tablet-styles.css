@@ -1,6 +1,6 @@
 @media (min-width: 768px) {
   body {
-    width: 768px;
+    min-width: 768px;
     margin: 0 auto;
   }
   .container {
@@ -14,6 +14,49 @@
   }
   .title {
     width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 120px;
+  }
+  .nav-menu-box-desktop {
+    display: block;
+  }
+  .nav-menu-desktop {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+  }
+  .nav-menu-list-desktop {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+  }
+  .nav-menu-list-desktop-green {
+    color: #404bbf;
+  }
+  .adres-menu-box-desktop {
+    display: block;
+    padding: 0;
+    margin: 0;
+  }
+  .adres-menu-desktop {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .adres-menu-list-desktop {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16667;
+    letter-spacing: 0.04em;
+    color: #434455;
   }
   .part-one {
     margin: 0 auto;
@@ -45,18 +88,16 @@
   .part-three {
     max-width: 100%;
     margin: 0 auto;
+    padding: 0 16;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    border: 1px solid blue;
     gap: 64px 24px;
+    justify-content: center;
   }
   .part-three-title {
     text-align: center;
   }
-  .part-three-list {
-    margin-bottom: 64px;
-
-    border: 1px solid red;
+  .part-three .part-three-list {
   }
 }
