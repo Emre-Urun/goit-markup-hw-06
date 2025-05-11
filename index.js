@@ -53,3 +53,28 @@ document.addEventListener("DOMContentLoaded", function () {
     console.error("Modal elements not found!");
   }
 });
+document.querySelectorAll(".nav-menu a").forEach((link) => {
+  link.addEventListener("click", () => {
+    // Menü açık sınıfını kaldır
+    document.body.classList.remove("menu-open");
+
+    // Hamburger menü öğesini gizle
+    const menu = document.getElementById("title-hamburger-menu");
+    if (menu) {
+      menu.style.display = "none";
+    }
+
+    // Hamburger ikonunu tekrar göster (eğer gizlenmişse)
+    const header = document.querySelector(".title-wrapper");
+    if (header) {
+      header.style.display = "";
+    }
+  });
+});
+const hamburgerIcon = document.getElementById("hamburger-menu-icon");
+const menu = document.getElementById("title-hamburger-menu");
+
+hamburgerIcon.addEventListener("click", () => {
+  document.body.classList.add("menu-open");
+  menu.style.display = "block"; // ✨ EKSİKSE EKLE
+});

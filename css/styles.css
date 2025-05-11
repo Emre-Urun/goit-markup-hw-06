@@ -1,11 +1,20 @@
+html {
+  scroll-behavior: smooth;
+}
 body {
-  width: 320px;
   font-family: "Roboto", "Raleway", sans-serif;
-  margin: 0 auto;
+  margin: 0;
+  padding: 0;
 }
 .container {
   width: 100%;
+  max-width: 100%;
 }
+header {
+  width: 100%;
+  max-width: 100%;
+}
+
 .title-hamburger-menu {
   display: none;
 }
@@ -21,16 +30,19 @@ body {
 }
 
 /* Header Bölümü Kodu burada başlıyor */
+.title-wrapper {
+  width: 100%;
+  max-width: 100%;
+}
 .title {
-  width: 320px;
+  width: 100%;
+  max-width: 100%;
   height: 56px;
   border-bottom: 1px solid #e7e9fc;
-  box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08),
-    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
   background: #fff;
   display: flex;
   align-items: center;
-  gap: 149px;
+  justify-content: space-between;
   padding-right: 16px;
   padding-left: 16px;
 }
@@ -53,10 +65,27 @@ body {
   height: 16px;
 }
 /* Hamburger Menu Kodu burada başlıyor */
-
+.title-wrapper {
+  width: 100%;
+  max-width: 100%;
+}
 .title-hamburger-menu {
-  position: relative;
-  margin: 0 auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw; /* ekranın tamamını kapla */
+  height: 100vh; /* tam ekran yüksekliği */
+  background-color: #fff;
+  z-index: 1000;
+  overflow-y: auto;
+  padding: 24px 16px;
+  display: none;
+  transition: transform 0.3s ease-in-out;
+  transform: translateX(0); /* açıkken */
+}
+
+body:not(.menu-open) .title-hamburger-menu {
+  transform: translateX(100%); /* kapalıyken sağa kayar */
 }
 .title-hamburger-menu-close {
   width: 24px;
@@ -152,7 +181,8 @@ body.menu-open footer {
 /* Header Bölümü kodu burada bitiyor */
 /* Arka plan resminin olduğu kod burada başlıyor */
 .part-one {
-  width: 320px;
+  width: 100%;
+  max-width: 100%;
   height: 432px;
   background-image: radial-gradient(rgba(46, 47, 66, 0.7)),
     url(../image/people-office.jpg);
@@ -470,7 +500,7 @@ body.menu-open footer {
   justify-content: center;
   align-items: center;
   display: none;
-  max-width: 320px;
+  max-width: 100%;
   margin: 0 auto;
 }
 .modal-wrapper {
