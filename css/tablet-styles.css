@@ -1,0 +1,61 @@
+@media (min-width: 768px) {
+  body {
+    width: 768px;
+    margin: 0 auto;
+  }
+  .container {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .hamburger-menu-icon {
+    display: none;
+  }
+  .title {
+    margin: 0 auto;
+    width: 100%;
+  }
+  .part-one {
+    margin: 0 auto;
+    width: 100%;
+  }
+  .part-one-text {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07143;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #fff;
+  }
+  .part-two {
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+  .part-two-list {
+    flex-basis: calc(50% - 24px); /* Her satırda iki öğe için genişlik */
+    max-width: calc(50% - 24px); /* Maksimum genişlik */
+    margin-bottom: 72px;
+  }
+  .part-two-list-title {
+    text-align: left;
+  }
+  .part-three {
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: 1px solid blue;
+    gap: 64px 24px;
+  }
+  .part-three-title {
+    text-align: center;
+  }
+  .part-three-list {
+    margin-bottom: 64px;
+
+    border: 1px solid red;
+  }
+}
