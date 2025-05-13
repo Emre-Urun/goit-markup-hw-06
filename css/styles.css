@@ -35,7 +35,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-
   padding-right: 16px;
   padding-left: 16px;
 }
@@ -234,6 +233,9 @@ body.menu-open footer {
 .part-two-list {
   background: rgba(0, 0, 0, 0.2);
 }
+.part-two-list-svg-box {
+  display: none;
+}
 .part-two-list-title {
   font-weight: 700;
   font-size: 36px;
@@ -265,6 +267,11 @@ body.menu-open footer {
   justify-content: center;
   flex-direction: column;
 }
+.part-three-list-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
 .part-three-title {
   margin-bottom: 72px;
   font-weight: 700;
@@ -274,6 +281,7 @@ body.menu-open footer {
   text-align: center;
   color: #2e2f42;
 }
+
 .part-three-list {
   margin-left: 16px;
   margin-right: 16px;
@@ -322,7 +330,8 @@ body.menu-open footer {
 /* Our Team kısmının olduğu kod burada bitiyor */
 /* Portfolio kısmının olduğu kod burada başlıyor */
 .part-four {
-  padding: 96px 16px;
+  padding-inline: 16px;
+  padding-bottom: 96px;
 }
 .part-four-title {
   font-weight: 700;
@@ -332,8 +341,14 @@ body.menu-open footer {
   text-align: center;
   color: #2e2f42;
   margin-bottom: 72px;
+  margin-top: 96px;
 }
 .part-four-list-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+.part-four-list-box {
   display: flex;
   flex-direction: column;
   gap: 48px;
@@ -391,6 +406,11 @@ body.menu-open footer {
   padding: 96px 16px;
   gap: 72px;
 }
+.part-five-title-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 72px;
+}
 .part-five-title {
   display: flex;
   flex-direction: column;
@@ -433,6 +453,9 @@ body.menu-open footer {
   gap: 16px;
   justify-content: center;
   align-items: center;
+}
+.part-five-contacts-input-label {
+  text-align: center;
 }
 .part-five-contacts-title {
   font-weight: 500;
@@ -483,6 +506,15 @@ body.menu-open footer {
   text-align: center;
   color: #fff;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+}
+.part-five-contacts-form {
+  text-align: center;
+}
+.part-five-form-box {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
 }
 .part-five-contacts-button-icon {
   width: 24px;
@@ -563,6 +595,8 @@ body.menu-open footer {
 .modal-form-wrapper {
   display: flex;
   flex-direction: column;
+  width: 100%;
+  max-width: 100%;
 }
 .modal-form-wrapper-label {
   margin-bottom: 4px;
@@ -581,8 +615,10 @@ body.menu-open footer {
 }
 .modal-form-wrapper-input {
   border: 1px solid rgba(46, 47, 66, 0.4);
+  width: 100%;
+  max-width: 100%;
   border-radius: 4px;
-  width: 256px;
+
   height: 40px;
   padding-top: 11px;
   padding-bottom: 11px;
@@ -608,7 +644,8 @@ body.menu-open footer {
   fill: #4d5ae5;
 }
 .modal-form-textarea {
-  width: 256px;
+  width: 100%;
+  max-width: 100%;
   height: 120px;
   resize: none;
   font-family: inherit;
@@ -667,11 +704,13 @@ body.menu-open footer {
   text-decoration-skip-ink: none;
   color: #4d5ae5;
 }
-.modal-form-button {
+.modal-form-button-wrapper {
   display: flex;
   justify-content: center;
-  text-align: center;
-  margin: 24px 59px 24px 60px;
+  align-items: center;
+  margin-top: 24px;
+}
+.modal-form-button {
   width: 169px;
   height: 56px;
   border-radius: 4px;

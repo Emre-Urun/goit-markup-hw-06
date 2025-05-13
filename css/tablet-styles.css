@@ -5,7 +5,6 @@
   }
   .container {
     width: 100%;
-    max-width: 100;
     margin: 0;
     padding: 0;
   }
@@ -18,9 +17,15 @@
     justify-content: space-around;
     align-items: center;
     gap: 120px;
+    height: 72px;
   }
   .nav-menu-box-desktop {
     display: block;
+    padding-top: 24px;
+  }
+  .title-wrapper {
+    width: 100%;
+    max-width: 100%;
   }
   .nav-menu-desktop {
     display: flex;
@@ -41,10 +46,19 @@
   .nav-menu-list-desktop-green {
     color: #404bbf;
   }
+  .nav-one::after {
+    content: "";
+    display: flex;
+    flex-direction: column;
+    width: 48px;
+    height: 4px;
+    background-color: #404bbf;
+    border-radius: 2px;
+    margin-top: 20px;
+  }
   .adres-menu-box-desktop {
-    display: block;
+    display: flex;
     padding: 0;
-    margin: 0;
   }
   .adres-menu-desktop {
     display: flex;
@@ -82,6 +96,9 @@
     max-width: calc(50% - 24px); /* Maksimum genişlik */
     margin-bottom: 72px;
   }
+  .part-two-list-svg-box {
+    display: none;
+  }
   .part-two-list-title {
     text-align: left;
   }
@@ -92,12 +109,71 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 64px 24px;
-    justify-content: center;
   }
   .part-three-title {
     text-align: center;
   }
-  .part-three .part-three-list {
+  .part-four {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 16;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .part-four-list-box {
+    flex-direction: row;
+    gap: 24px;
+  }
+  .part-five {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  .part-five-title-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+  }
+  .part-five-title {
+    align-items: flex-start;
+  }
+  .part-five-social-media {
+    align-items: flex-start;
+    margin-bottom: 40px;
+  }
+  .part-five-contacts {
+    flex-direction: row;
+    margin-bottom: 55px;
+  }
+
+  .part-five-contacts-input-label {
+    display: flex;
+    flex-direction: column;
+  }
+  .part-five-contacts-button {
+  }
+  .part-five-contacts-form {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+  }
+  .part-five-form-box {
+    flex-direction: row;
+  }
+  .part-five-contacts-title {
+    margin-bottom: 16px;
+  }
+  .modal-wrapper {
+    width: 408px;
+  }
+  .modal-form {
+    justify-content: center;
+    align-items: center;
   }
 }

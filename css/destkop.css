@@ -1,0 +1,131 @@
+@media (min-width: 1158px) {
+  body {
+    min-width: 1158px;
+    margin: 0 auto;
+  }
+  .container {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .title {
+    display: flex;
+    flex-direction: column;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-left: 156px;
+    /* padding-right: 156px; */
+    width: 100%;
+    max-width: 100%;
+  }
+  .title-logo {
+    margin-right: -44px;
+  }
+  .nav-menu-box {
+    justify-content: center;
+    padding-top: 24px;
+    margin-right: 212px;
+  }
+
+  .adres-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .adres-menu-list {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+  }
+  .part-one {
+    height: 600px;
+  }
+  .part-one-text {
+    padding-inline: 400px;
+  }
+  .part-two {
+    flex-wrap: nowrap;
+    width: 100%;
+    max-width: 100%;
+    gap: 24px;
+    align-items: center;
+    justify-content: center;
+    padding-inline: 156px;
+  }
+  .part-two-list {
+    background: none;
+  }
+  .part-two-list-svg-box {
+    display: flex;
+    padding: 24px 100px;
+    margin-bottom: 8px;
+    border: 1px solid #0a0a0a;
+    border-radius: 4px;
+    width: 264px;
+    height: 112px;
+    background: #f4f4fd;
+  }
+  .part-two-list-svg {
+    width: 64px;
+    height: 64px;
+  }
+  .part-two-list-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    text-align: left;
+  }
+  .part-two-list-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+  }
+  .part-three {
+    gap: 0;
+  }
+  .part-three-list-wrapper {
+    flex-direction: row;
+    gap: 1px;
+  }
+  .part-four {
+    padding-inline: 156px;
+  }
+  .part-four-list-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+  .part-four-list-box {
+    display: contents;
+  }
+  .part-four-list {
+    width: calc((100% - 48px) / 3);
+  }
+
+  .part-five {
+    width: 100%;
+    max-width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+  }
+
+  .part-five-form-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+  }
+}
