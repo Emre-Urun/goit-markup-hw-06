@@ -12,9 +12,6 @@
     display: flex;
     flex-direction: column;
     flex-direction: row;
-    justify-content: flex-start;
-    padding-left: 156px;
-    /* padding-right: 156px; */
     width: 100%;
     max-width: 100%;
   }
@@ -26,7 +23,6 @@
     padding-top: 24px;
     margin-right: 212px;
   }
-
   .adres-menu {
     display: flex;
     flex-direction: row;
@@ -109,7 +105,6 @@
   .part-four-list {
     width: calc((100% - 48px) / 3);
   }
-
   .part-five {
     width: 100%;
     max-width: 100%;
@@ -121,7 +116,6 @@
     justify-content: center;
     padding-top: 100px;
   }
-
   .part-five-form-box {
     display: flex;
     flex-direction: row;

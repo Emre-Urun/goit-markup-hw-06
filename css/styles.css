@@ -187,13 +187,19 @@ body.menu-open footer {
   max-width: 100%;
   height: 432px;
   background-image: radial-gradient(rgba(46, 47, 66, 0.7)),
-    url(../image/people-office.jpg);
+    url(../image/people-office\ 1x.jpg);
   background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 88px;
+}
+@media (min-resolution: 2x) {
+  .part-one {
+    background-image: radial-gradient(rgba(46, 47, 66, 0.7)),
+      url(../image/people-office\ 2x.jpg);
+  }
 }
 .part-one-text {
   font-weight: 700;
@@ -536,16 +542,18 @@ body.menu-open footer {
   align-items: center;
   display: none;
   max-width: 100%;
-  margin: 0 auto;
 }
 .modal-wrapper {
   position: relative;
   border-radius: 4px;
-  width: 288px;
-  height: 623px;
+  width: 90%;
+  max-width: 100%;
+  height: auto;
+
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
     0 2px 1px 0 rgba(0, 0, 0, 0.2);
   background: #fcfcfc;
+  /* padding-bottom: 24px; */
 }
 .modal-close-button {
   position: absolute;
@@ -722,6 +730,7 @@ body.menu-open footer {
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: #fff;
+  margin-bottom: 24px;
   border: none;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
