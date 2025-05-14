@@ -187,7 +187,7 @@ body.menu-open footer {
   max-width: 100%;
   height: 432px;
   background-image: radial-gradient(rgba(46, 47, 66, 0.7)),
-    url(../image/people-office\ 1x.jpg);
+    url(../image/people-office-1x.jpg);
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -198,7 +198,7 @@ body.menu-open footer {
 @media (min-resolution: 2x) {
   .part-one {
     background-image: radial-gradient(rgba(46, 47, 66, 0.7)),
-      url(../image/people-office\ 2x.jpg);
+      url(../image/people-office-2x.jpg);
   }
 }
 .part-one-text {
@@ -235,9 +235,6 @@ body.menu-open footer {
   display: flex;
   flex-direction: column;
   gap: 72px;
-}
-.part-two-list {
-  background: rgba(0, 0, 0, 0.2);
 }
 .part-two-list-svg-box {
   display: none;
