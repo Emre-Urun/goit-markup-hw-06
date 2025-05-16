@@ -186,7 +186,10 @@ body.menu-open footer {
   width: 100%;
   max-width: 100%;
   height: 432px;
-  background-image: radial-gradient(rgba(46, 47, 66, 0.7)),
+  background-image: radial-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
     url(../image/people-office-1x.jpg);
   background-size: cover;
   display: flex;
@@ -197,7 +200,11 @@ body.menu-open footer {
 }
 @media (min-resolution: 2x) {
   .part-one {
-    background-image: url(../image/people-office-2x.jpg);
+    background-image: radial-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../image/people-office-2x.jpg);
   }
 }
 .part-one-text {
